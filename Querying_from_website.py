@@ -28,3 +28,10 @@ def query_site(url, params, uid="", fmt="json"):
 def query_by_name(url, params, name):
     params["query"] = "artist:" + name
     return query_site(url, params)
+
+def pretty_print(data, indent=4):
+    if type(data) == dict:
+        print (json.dumps(data, indent=indent, sort_keys=True))
+    else:
+        print(data)
+
