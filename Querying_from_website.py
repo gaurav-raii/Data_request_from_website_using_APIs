@@ -24,3 +24,7 @@ def query_site(url, params, uid="", fmt="json"):
         return r.json()
     else:
         r.raise_for_status()
+        
+def query_by_name(url, params, name):
+    params["query"] = "artist:" + name
+    return query_site(url, params)
