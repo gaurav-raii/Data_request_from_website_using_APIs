@@ -6,3 +6,6 @@ Created on Fri Apr 19 15:48:46 2019
 """
 import json
 import requests
+
+BASE_URL = "http://musicbrainz.org/ws/2/"
+ARTIST_URL = BASE_URL + "artist/"
