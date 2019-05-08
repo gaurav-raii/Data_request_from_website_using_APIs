@@ -9,3 +9,8 @@ import requests
 
 BASE_URL = "http://musicbrainz.org/ws/2/"
 ARTIST_URL = BASE_URL + "artist/"
+
+query_type = {  "simple": {},
+                "atr": {"inc": "aliases+tags+ratings"},
+                "aliases": {"inc": "aliases"},
+                "releases": {"inc": "releases"}}
