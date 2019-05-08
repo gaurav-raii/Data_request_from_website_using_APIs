@@ -52,3 +52,7 @@ def main():
     print ("\nALL TITLES:")
     for t in release_titles:
         print (t)
+
+# to run as separate script
+if __name__ == '__main__':
+    main()
